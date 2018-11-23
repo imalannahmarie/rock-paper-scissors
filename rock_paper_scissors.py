@@ -36,8 +36,11 @@ def playGame():
         askToPlay = input("Want to play again? Y/N\n").lower()
         if askToPlay == "y":
             playGame()
-        else:
+        elif askToPlay == "n":
             print("Bye!")
+        else:
+            print("Please type Y or N to play again.")
+            playAgain()
 
     # Game Outcomes
     if userChoice == compChoice:
